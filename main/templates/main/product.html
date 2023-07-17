@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{%block content %}
+<div class="container-fluid">
+    <div class="image-container" style="overflow:hidden; height:45vh">
+        <div class="d-flex justify-content-center" style="transform:translateY(-15%)">
+            <img src="{% mediapath product_detail.preview %}" class="img-fluid" alt=" {{ product_detail.name }}"/>
+        </div>
+    </div>
+</div>
+<div class="container mb-5" style="margin-top:3vh;">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <h2 class="text-nowrap">{{ product_detail.name }}</h2>
+        </div>
+        <div class="col-4 text-end">
+            <div class="badge bg-secondary fs-5 text-wrap" style="width: 20rem;">{{ product_detail.category }}</div>
+        </div>
+        <div class="w-100">
+            <div class="col-4">
+                <h4 class="text-body-secondary">{{ product_detail.price|intspace }} руб.</h4>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="header">
+        <h3 class="text"> Описание</h3>
+    </div>
+    <p class="fs-5"> {{ product_detail.description }} </p>
+
+</div>
+<div class="container" style="margin-top:10vh;">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <p class="text-nowrap text-secondary">Дата создания: {{ product_detail.date_of_creation }}</p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="col-4">
+            <p class="text-nowrap text-secondary">Дата последнего редактирования: {{ product_detail.date_of_correction }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
