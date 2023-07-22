@@ -11,7 +11,11 @@ class Product(models.Model):
     category = models.CharField(max_length=100, verbose_name='категория')
     price = models.IntegerField(verbose_name='цена за покупку')
     date_of_creation = models.DateTimeField(verbose_name='дата создания')
-    date_of_correction = models.DateTimeField(verbose_name='дата последнего изменения')
+    date_of_correction = models.DateTimeField(verbose_name='дата последнего изменения', **NULLABLE)
+
+    views_count = models.IntegerField(default=0, verbose_name='просмотры')
+    is_published = models.BooleanField(default=True, verbose_name='опубликован')
+    slug = models.CharField(max_length=150, verbose_name='slug', **NULLABLE)
 
     def __str__(self):
         return f'{self.name} {self.category} {self.price}'

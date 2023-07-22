@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{% block content %}
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div class="col-md-8 mx-auto">
+            <h1 class="fw-light">{{ title }}</h1>
+            <p>Добро пожаловать в наш интернет-магазин электроники, звуковых систем и товаров для здоровья кожи!</p>
+            <p>Здесь вы найдете самые инновационные и качественные товары, которые обеспечат вас удивительным опытом и подарят ощущение полного комфорта.</p>
+        </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="col-12 mb-5">
+            <a class="btn btn-outline-secondary" href="{% url 'products:create' %}">Добавить продукт</a>
+        </div>
+        <div class="row justify-content-center">
+            {% for object in object_list %}
+            {% if object.is_published == True %}
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <img src="{% mediapath object.preview %}" class="card-img-top" alt="{{ object.name }}" style="object-fit: cover; height: 20vh"/>
+                    <div class="card-body">
+                        <h4><a href="{% url 'products:product' object.pk %}" class="card-title"> {{ object.name }}</a></h4>
+                        <p class="card-text">{{ object.description|truncatechars:100 }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col">
+                                <h6 class="card-subtitle mb-3 text-body-secondary">{{ object.price|intspace }} руб.</h6>
+                                <div class="btn-group">
+                                    <a href="{% url 'products:edit' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-primary">Редактировать</a>
+                                    <a href="{% url 'products:delete' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-danger">Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
