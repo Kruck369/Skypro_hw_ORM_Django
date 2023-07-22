@@ -1,0 +1,68 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{%block content %}
+<div class="container-fluid">
+    <div class="image-container" style="overflow:hidden; height:45vh">
+        <div class="d-flex justify-content-center" style="transform:translateY(-15%)">
+            <img src="{% mediapath object.preview %}" class="img-fluid" alt=" {{ product_detail.name }}"/>
+        </div>
+    </div>
+</div>
+<div class="container mb-5" style="margin-top:3vh;">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <h2 class="text-nowrap">{{ object.name }} ({{ object.slug }})</h2>
+            {% if object.is_published == True %}
+            <div class="badge bg-success fs-5 text-wrap mb-2">Опубликовано</div>
+            {% else %}
+            <div class="badge bg-warning fs-5 text-wrap mb-2">Не опубликовано</div>
+            {% endif %}
+        </div>
+        <div class="col-4 text-end">
+            <div class="badge bg-secondary fs-5 text-wrap" style="width: 20rem;">{{ object.category }}</div>
+            <div class="btn-group mt-2">
+                <div class="btn-group">
+                    <a href="{% url 'products:edit' object.pk %}" type="button"
+                       class="btn btn-outline-primary">Редактировать</a>
+                    <a href="{% url 'products:delete' object.pk %}" type="button"
+                       class="btn btn-outline-danger">Удалить</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-100">
+            <div class="col-4">
+                <h4 class="text-body-secondary">{{ object.price|intspace }} руб.</h4>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="header">
+        <h3 class="text"> Описание</h3>
+    </div>
+    <p class="fs-5"> {{ object.description }} </p>
+    <div class="footer">
+        <p class="fs-5 text-secondary"> Просмотры: {{ object.views_count }}</p>
+
+    </div>
+
+</div>
+<div class="container" style="margin-top:10vh;">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <p class="text-nowrap text-secondary">Дата создания: {{ object.date_of_creation }}</p>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="col-4">
+            {% if object.date_of_correction == None %}
+            <p class="text-nowrap text-secondary">Дата последнего редактирования: -</p>
+            {% else %}
+            <p class="text-nowrap text-secondary">Дата последнего редактирования: {{ object.date_of_correction }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
