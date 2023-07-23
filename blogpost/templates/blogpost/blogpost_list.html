@@ -1,0 +1,45 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{% block content %}
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div class="col-md-8 mx-auto">
+            <h1 class="fw-light">{{ title }}</h1>
+            <p>Здесь Вы можете создать свой пост о чём угодно!</p>
+        </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="col-12 mb-5">
+            <a class="btn btn-outline-secondary" href="{% url 'blogposts:create' %}">Добавить пост</a>
+        </div>
+        <div class="row">
+            {% for object in object_list %}
+            {% if object.is_published == True %}
+                <div class="card mb-4 box-shadow">
+                    <img src="{% mediapath object.preview %}" class="card-img-top" alt="{{ object.name }}" style="object-fit: cover; height: 20vh"/>
+                    <div class="card-body">
+                        <h4><a href="{% url 'blogposts:blogpost' object.pk %}" class="card-title"> {{ object.title }}</a></h4>
+                        <p class="card-text">{{ object.content|truncatechars:100 }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col">
+                                <div class="btn-group">
+                                    <a href="{% url 'blogposts:edit' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-primary">Редактировать</a>
+                                    <a href="{% url 'blogposts:delete' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-danger">Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

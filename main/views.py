@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
-from django.core.paginator import Paginator
 from django.utils import timezone
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from pytils.translit import slugify
@@ -25,8 +24,6 @@ class ProductDetailView(DetailView):
         self.object.views_count += 1
         self.object.save()
         return self.object
-
-
 
 
 class ProductCreateView(CreateView):
