@@ -4,18 +4,18 @@
 {% block content %}
 {% if object %}
 {% include 'main/includes/inc_image.html' %}
-<div class="album py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="card">
-                    {% if object %}
-                    <div class="card-header">Редактирование продукта</div>
-                    {% else %}
-                    <div class="card-header">Создание продукта</div>
-                    {% endif %}
-                    <div class="card-body">
-                        <form method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        {% if object %}
+                        <div class="card-header">Редактирование продукта</div>
+                        {% else %}
+                        <div class="card-header">Создание продукта</div>
+                        {% endif %}
+                        <div class="card-body">
                             {% csrf_token %}
                             {{ form.as_p }}
                             <button type="submit" class="btn btn-success">
@@ -25,13 +25,31 @@
                                 Создать
                                 {% endif %}
                             </button>
-                        </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        {% if object %}
+                        <div class="card-header">Редактирование продукта</div>
+                        {% else %}
+                        <div class="card-header">Создание продукта</div>
+                        {% endif %}
+                        <div class="card-body">
+                            {{ formset.management_form }}
+                                {% for form in formset.forms %}
+                                {{ form.as_p }}
+                                    {% if not forloop.last %}
+                                        <hr>
+                                    {% endif %}
+                                {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+</form>
 {% else %}
 <section class="text-center container">
     <div class="row py-lg-5">

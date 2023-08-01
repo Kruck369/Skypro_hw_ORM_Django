@@ -7,7 +7,8 @@
         <div class="col-md-8 mx-auto">
             <h1 class="fw-light">{{ title }}</h1>
             <p>Добро пожаловать в наш интернет-магазин электроники, звуковых систем и товаров для здоровья кожи!</p>
-            <p>Здесь вы найдете самые инновационные и качественные товары, которые обеспечат вас удивительным опытом и подарят ощущение полного комфорта.</p>
+            <p>Здесь вы найдете самые инновационные и качественные товары, которые обеспечат вас удивительным опытом и
+                подарят ощущение полного комфорта.</p>
         </div>
     </div>
 </section>
@@ -22,10 +23,14 @@
             {% if object.is_published == True %}
             <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                    <img src="{% mediapath object.preview %}" class="card-img-top" alt="{{ object.name }}" style="object-fit: cover; height: 20vh"/>
+                    <img src="{% mediapath object.preview %}" class="card-img-top" alt="{{ object.name }}"
+                         style="object-fit: cover; height: 20vh"/>
                     <div class="card-body">
-                        <h4><a href="{% url 'products:product' object.pk %}" class="card-title"> {{ object.name }}</a></h4>
-                        <p class="card-text">{{ object.description|truncatechars:100 }}</p>
+                        <h4><a href="{% url 'products:product' object.pk %}" class="card-title"> {{ object.name }}</a>
+                        </h4>
+                        <div class="card-text">
+                            <p>{{ object.description|truncatechars:100 }}</p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="col">
                                 <h6 class="card-subtitle mb-3 text-body-secondary">{{ object.price|intspace }} руб.</h6>
@@ -37,6 +42,18 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="card-footer">
+                        {% if object.version_set.exists %}
+                        <a>Версия продукта:</a>
+                        {% for version in object.version_set.all %}
+                        {% if version.is_active == True %}
+                        <a>{{ version.version_number }}</a>
+                        {% endif %}
+                        {% endfor %}
+                        {% else %}
+                        <a>У этого продукта нет версий.</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
