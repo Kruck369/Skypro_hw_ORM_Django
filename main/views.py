@@ -1,10 +1,12 @@
+from django.forms import inlineformset_factory
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.utils import timezone
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from pytils.translit import slugify
 
-from main.models import Product
+from main.forms import ProductForm, VersionForm
+from main.models import Product, Version
 
 
 class ProductListView(ListView):
@@ -58,7 +60,7 @@ class ProductDeleteView(DeleteView):
 
 class ProductUpdateView(UpdateView):
     model = Product
-    fields = ('name', 'description', 'preview', 'price', 'is_published')
+    form_class = ProductForm
 
     def form_valid(self, form):
         if form.is_valid():
@@ -66,6 +68,12 @@ class ProductUpdateView(UpdateView):
             new_mat.slug = slugify(new_mat.name)
             new_mat.save()
             form.instance.date_of_correction = timezone.now()
+
+        formset = self.get_context_data()['formset']
+        self.object = form.save()
+        if formset.is_valid():
+            formset.instance = self.object
+            formset.save()
 
         return super().form_valid(form)
 
@@ -75,4 +83,9 @@ class ProductUpdateView(UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Редактирование продукта'
+        SubjectFormset = inlineformset_factory(Product, Version, form=VersionForm, extra=1)
+        if self.request.method == 'POST':
+            context['formset'] = SubjectFormset(self.request.POST, instance=self.object)
+        else:
+            context['formset'] = SubjectFormset(instance=self.object)
         return context
