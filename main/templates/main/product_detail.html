@@ -1,7 +1,7 @@
 {% extends 'main/base.html' %}
 {% load media_tags %}
 {% load custom_filters %}
-{%block content %}
+{% block content %}
 <div class="container-fluid">
     <div class="image-container" style="overflow:hidden; height:45vh">
         <div class="d-flex justify-content-center" style="transform:translateY(-15%)">
@@ -23,10 +23,12 @@
             <div class="badge bg-secondary fs-5 text-wrap" style="width: 20rem;">{{ object.category }}</div>
             <div class="btn-group mt-2">
                 <div class="btn-group">
+                    {% if user == object.user %}
                     <a href="{% url 'products:edit' object.pk %}" type="button"
                        class="btn btn-outline-primary">Редактировать</a>
                     <a href="{% url 'products:delete' object.pk %}" type="button"
                        class="btn btn-outline-danger">Удалить</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -45,7 +47,7 @@
     <p class="fs-5"> {{ object.description }} </p>
     <div class="footer">
         <p class="fs-5 text-secondary"> Просмотры: {{ object.views_count }}</p>
-
+        <p class="fs-5 text-secondary"> Автор: {{ object.user.first_name }} {{ object.user.last_name }} ({{ object.user.email }})</p>
     </div>
 
 </div>

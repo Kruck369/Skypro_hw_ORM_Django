@@ -1,0 +1,1703 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-07-13T18:17:04.674Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Product object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-07-13T18:24:35.107Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Category object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-07-13T18:30:12.435Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "1 123 16",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-07-13T18:34:52.809Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "123 123",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-07-13T18:35:01.882Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Категория 1 Описание категории 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-07-17T18:45:25.259Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "1 123 16",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-07-17T18:46:13.322Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт 1 Категория 1 150",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-07-17T18:46:32.125Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Продукт 2 Категория 2 155",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-07-17T18:46:50.205Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Продукт 3 Категория 1 50",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-07-17T18:47:06.389Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Продукт 4 Категория 3 520",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-07-17T18:47:24.320Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Продукт 5 Категория 4 10",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2023-07-17T18:48:24.348Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Продукт 6 Категория 2 210",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2023-07-17T18:48:34.332Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "14",
+      "object_repr": "Категория 1 Описание категории 6",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2023-07-17T18:48:37.497Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "15",
+      "object_repr": "Категория 2 Описание категории 7",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2023-07-17T18:48:42.134Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "16",
+      "object_repr": "Категория 3 Описание категории 3",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2023-07-17T18:48:45.336Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "15",
+      "object_repr": "Категория 2 Описание категории 2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2023-07-17T18:48:48.011Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "14",
+      "object_repr": "Категория 1 Описание категории 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2023-07-17T18:48:52.919Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "17",
+      "object_repr": "Категория 4 Описание категории 4",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2023-07-17T18:48:55.250Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "17",
+      "object_repr": "Категория 4 Описание категории 4",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2023-07-17T18:48:59.494Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "18",
+      "object_repr": "Категория 5 Описание категории 5",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2023-07-17T18:49:01.263Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "18",
+      "object_repr": "Категория 5 Описание категории 5",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2023-07-17T18:49:05.100Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "19",
+      "object_repr": "Категория 6 Описание категории 6",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2023-07-17T19:04:30.825Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт 1 Категория 1 150",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2023-07-17T19:15:34.455Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт 1 Категория 1 150",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2023-07-17T19:16:16.810Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Категория 1 150",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2023-07-17T19:16:36.497Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Хрома-Бластер Энерджайзер Категория 2 155",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2023-07-17T19:16:52.723Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "АртеБлюз Соникус Категория 1 50",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2023-07-17T19:17:06.766Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Фото-Визион ПикселМэйкер Категория 3 520",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2023-07-17T19:17:21.496Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Экстра-Шэйд Солнцезащита Категория 4 10",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2023-07-17T19:17:32.124Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "БиоХэлс ГринТренд Категория 2 210",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2023-07-17T19:18:45.171Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "14",
+      "object_repr": "Электроника и гаджеты Описание категории 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2023-07-17T19:18:53.441Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "15",
+      "object_repr": "Аксессуары и устройства для мобильных устройств Описание категории 2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2023-07-17T19:19:00.709Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "16",
+      "object_repr": "Аудио и звуковые системы Описание категории 3",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2023-07-17T19:19:07.770Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "17",
+      "object_repr": "Красота и уход за кожей Описание категории 4",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2023-07-17T19:19:14.368Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "18",
+      "object_repr": "Категория 5 Описание категории 5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2023-07-17T19:19:14.374Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "19",
+      "object_repr": "Категория 6 Описание категории 6",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2023-07-17T19:19:22.465Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "14",
+      "object_repr": "Электроника и гаджеты В нашей коллекции электроники и гаджетов вы найдете последние новинки технологий, которые сделают вашу жизнь более удобной и интересной. От инновационных смартфонов и ноутбуков д",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2023-07-17T19:19:28.570Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "15",
+      "object_repr": "Аксессуары и устройства для мобильных устройств Откройте для себя нашу удивительную коллекцию аксессуаров и устройств для мобильных устройств, которые добавят стиль и функциональность к вашим гаджетам",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2023-07-17T19:19:34.141Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "16",
+      "object_repr": "Аудио и звуковые системы Погрузитесь в непревзойденное аудио-воздействие с нашей коллекцией аудио и звуковых систем. От мощных домашних кинотеатров и стерео систем до портативных Bluetooth-динамиков и",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2023-07-17T19:19:40.334Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "17",
+      "object_repr": "Красота и уход за кожей Позаботьтесь о своей красоте и здоровье с нашей коллекцией продуктов для ухода за кожей. У нас есть все, что вам нужно для осуществления полноценного режима ухода, включая орга",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2023-07-17T19:21:56.815Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Категория 1 150",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2023-07-17T19:23:52.069Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Электроника и гаджеты 150",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2023-07-17T19:24:02.582Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Хрома-Бластер Энерджайзер Электроника и гаджеты 155",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2023-07-17T19:24:22.942Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "АртеБлюз Соникус Аудио и звуковые системы 50",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2023-07-17T19:24:45.837Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Хрома-Бластер Энерджайзер Аксессуары и устройства для мобильных устройств 155",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2023-07-17T19:24:54.080Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Фото-Визион ПикселМэйкер Электроника и гаджеты 520",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2023-07-17T19:25:07.449Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Экстра-Шэйд Солнцезащита Красота и уход за кожей 10",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2023-07-17T19:25:20.805Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "БиоХэлс ГринТренд Красота и уход за кожей 210",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2023-07-17T19:30:14.923Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Электроника и гаджеты 150",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2023-07-17T19:30:19.529Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Хрома-Бластер Энерджайзер Аксессуары и устройства для мобильных устройств 155",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2023-07-17T19:30:24.255Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "АртеБлюз Соникус Аудио и звуковые системы 50",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2023-07-17T19:30:29.660Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Фото-Визион ПикселМэйкер Электроника и гаджеты 520",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2023-07-17T19:30:34.007Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Экстра-Шэйд Солнцезащита Красота и уход за кожей 10",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2023-07-17T19:30:38.287Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "БиоХэлс ГринТренд Красота и уход за кожей 210",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2023-07-17T19:30:42.305Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Электроника и гаджеты 150",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2023-07-17T20:15:33.807Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Электроника и гаджеты 150000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430 \\u0437\\u0430 \\u043f\\u043e\\u043a\\u0443\\u043f\\u043a\\u0443\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2023-07-17T20:15:47.036Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Хрома-Бластер Энерджайзер Аксессуары и устройства для мобильных устройств 15000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430 \\u0437\\u0430 \\u043f\\u043e\\u043a\\u0443\\u043f\\u043a\\u0443\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2023-07-17T20:15:53.988Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "АртеБлюз Соникус Аудио и звуковые системы 50000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430 \\u0437\\u0430 \\u043f\\u043e\\u043a\\u0443\\u043f\\u043a\\u0443\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2023-07-17T20:15:59.845Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Фото-Визион ПикселМэйкер Электроника и гаджеты 520000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430 \\u0437\\u0430 \\u043f\\u043e\\u043a\\u0443\\u043f\\u043a\\u0443\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2023-07-17T20:16:08.448Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Экстра-Шэйд Солнцезащита Красота и уход за кожей 10000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430 \\u0437\\u0430 \\u043f\\u043e\\u043a\\u0443\\u043f\\u043a\\u0443\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2023-07-17T20:16:16.113Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "БиоХэлс ГринТренд Красота и уход за кожей 210000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430 \\u0437\\u0430 \\u043f\\u043e\\u043a\\u0443\\u043f\\u043a\\u0443\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2023-07-17T20:57:13.652Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Электроника и гаджеты 150000",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2023-07-17T20:57:20.792Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Магнетикс Xplorer Электроника и гаджеты 150000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2023-07-17T20:57:29.031Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Хрома-Бластер Энерджайзер Аксессуары и устройства для мобильных устройств 15000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2023-07-17T20:57:35.913Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "АртеБлюз Соникус Аудио и звуковые системы 50000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2023-07-17T20:57:39.292Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Хрома-Бластер Энерджайзер Аксессуары и устройства для мобильных устройств 15000",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2023-07-17T20:57:41.485Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "АртеБлюз Соникус Аудио и звуковые системы 50000",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2023-07-17T20:57:43.777Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "АртеБлюз Соникус Аудио и звуковые системы 50000",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2023-07-17T20:57:48.992Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Фото-Визион ПикселМэйкер Электроника и гаджеты 520000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2023-07-17T20:57:53.159Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Экстра-Шэйд Солнцезащита Красота и уход за кожей 10000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2023-07-17T20:57:57.299Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "БиоХэлс ГринТренд Красота и уход за кожей 210000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 (\\u043f\\u0440\\u0435\\u0432\\u044c\\u044e)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2023-07-23T10:23:26.220Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Тест 1: Тест1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add category",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change category",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete category",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view category",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add product",
+      "content_type": 8,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change product",
+      "content_type": 8,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete product",
+      "content_type": 8,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view product",
+      "content_type": 8,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Блог пост",
+      "content_type": 9,
+      "codename": "add_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Блог пост",
+      "content_type": 9,
+      "codename": "change_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Блог пост",
+      "content_type": 9,
+      "codename": "delete_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Блог пост",
+      "content_type": 9,
+      "codename": "view_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Версия",
+      "content_type": 10,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Версия",
+      "content_type": 10,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Версия",
+      "content_type": 10,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Версия",
+      "content_type": 10,
+      "codename": "view_version"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$ADwnsuarTKPegUtD00uI2z$YS760EAXoSLaffoFPa7PYtfMCjrCjIJQCKCCCcWFk/o=",
+      "last_login": "2023-07-17T18:45:02.863Z",
+      "is_superuser": true,
+      "username": "Kruck",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-07-13T18:12:11.667Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "main",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "main",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "blogpost",
+      "model": "blogpost"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "main",
+      "model": "version"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "22ucx79s8c30fk9mf15fyegbvcfwj4d1",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSG8EZfu-w1kgBmpGkhKuzL-uzbpQrf3nHNfLMK21rgNXOJc2IVJdvrdEuQHth2UO7Rb57m3dZkT3xV-0MGnXvB5Pdy_gwqjfmslMQQ01guyQbqzUY4MCWWzJIGKZPAehFI-YZaWvMkue61tCQ50AGLvD7nwNyM:1qK0p6:8yfWkmsS18EecR0PwNIO7Wyf79wE6CZutU-7NnK35JE",
+      "expire_date": "2023-07-27T18:13:52.776Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "nhz5tuksvxxdhfsdm012fhum8hxju4vf",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSG8EZfu-w1kgBmpGkhKuzL-uzbpQrf3nHNfLMK21rgNXOJc2IVJdvrdEuQHth2UO7Rb57m3dZkT3xV-0MGnXvB5Pdy_gwqjfmslMQQ01guyQbqzUY4MCWWzJIGKZPAehFI-YZaWvMkue61tCQ50AGLvD7nwNyM:1qLTDS:Aly-ms3Er1HStaogispgxvcZ_0HTtchf6TOibFNjbHY",
+      "expire_date": "2023-07-31T18:45:02.867Z"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 2,
+    "fields": {
+      "name": "Магнетикс Xplorer",
+      "description": "Инновационный гибридный гаджет, сочетающий в себе функции смартфона и планшета. Он предлагает потрясающий супер-AMOLED экран, мощный процессор, беспроводную зарядку и уникальную систему виртуальной реальности.",
+      "preview": "products/Product_1_1.png",
+      "category": "Электроника и гаджеты",
+      "price": 150000,
+      "date_of_creation": "2023-07-12T06:00:00Z",
+      "date_of_correction": "2023-08-01T20:20:06.799Z",
+      "views_count": 132,
+      "is_published": true,
+      "slug": "magnetiks-xplorer"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 3,
+    "fields": {
+      "name": "Хрома-Бластер Энерджайзер",
+      "description": "Первоклассное устройство для зарядки мобильных устройств, оснащенное высококапацитивным аккумулятором и новаторской технологией быстрой зарядки. Он предлагает многофункциональность и стильный дизайн.",
+      "preview": "products/Product_2_1.png",
+      "category": "Аксессуары и устройства для мобильных устройств",
+      "price": 15000,
+      "date_of_creation": "2023-07-17T18:46:29Z",
+      "date_of_correction": "2023-07-17T18:46:30Z",
+      "views_count": 3,
+      "is_published": true,
+      "slug": null
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 4,
+    "fields": {
+      "name": "АртеБлюз Соникус",
+      "description": "Невероятно компактная акустическая система, созданная с использованием передовых технологий. Она обеспечивает потрясающее качество звука, глубокие басы и беспроводное подключение с возможностью стриминга музыки.",
+      "preview": "products/Product_3_1.png",
+      "category": "Аудио и звуковые системы",
+      "price": 50000,
+      "date_of_creation": "2023-07-17T18:46:48Z",
+      "date_of_correction": "2023-07-22T13:41:25.034Z",
+      "views_count": 2,
+      "is_published": true,
+      "slug": "arteblyuz-sonikus"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 6,
+    "fields": {
+      "name": "Экстра-Шэйд Солнцезащита",
+      "description": "Уникальные солнцезащитные очки с оптическими линзами, которые блокируют 99% вредного ультрафиолетового излучения. Они имеют современный дизайн, эргономичную форму и встроенную защиту от отражений.",
+      "preview": "products/Product_5_1.png",
+      "category": "Красота и уход за кожей",
+      "price": 10000,
+      "date_of_creation": "2023-07-17T18:47:22Z",
+      "date_of_correction": "2023-07-17T18:47:23Z",
+      "views_count": 1,
+      "is_published": true,
+      "slug": null
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 7,
+    "fields": {
+      "name": "БиоХэлс ГринТренд",
+      "description": "Органический набор для ухода за кожей, созданный из натуральных ингредиентов и биоразлагаемых материалов. Он включает очищающий гель, увлажняющий крем и тонизирующую маску, которые бережно ухаживают за кожей и придают ей здоровый и сияющий вид.",
+      "preview": "products/Product_6_1.png",
+      "category": "Красота и уход за кожей",
+      "price": 210000,
+      "date_of_creation": "2023-07-17T18:48:22Z",
+      "date_of_correction": "2023-07-17T18:48:23Z",
+      "views_count": 0,
+      "is_published": true,
+      "slug": null
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 15,
+    "fields": {
+      "name": "Тест 1",
+      "description": "Тест 1",
+      "preview": "products/Product_4_4Buh6RI.png",
+      "category": "",
+      "price": 15000,
+      "date_of_creation": "2023-07-22T08:56:46.971Z",
+      "date_of_correction": "2023-07-22T09:38:52.678Z",
+      "views_count": 2,
+      "is_published": false,
+      "slug": "test-1"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 16,
+    "fields": {
+      "name": "Тест 2",
+      "description": "Тест 2",
+      "preview": "products/Product_6_hIjwCBi.png",
+      "category": "",
+      "price": 150,
+      "date_of_creation": "2023-07-22T09:09:31.926Z",
+      "date_of_correction": "2023-07-22T09:34:18.590Z",
+      "views_count": 2,
+      "is_published": false,
+      "slug": "test-2"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 24,
+    "fields": {
+      "name": "Тест 3",
+      "description": "Тест 3",
+      "preview": "products/Product_1_jGJBH61.png",
+      "category": "",
+      "price": 12300,
+      "date_of_creation": "2023-07-22T13:33:33.461Z",
+      "date_of_correction": "2023-08-01T20:19:34.584Z",
+      "views_count": 26,
+      "is_published": true,
+      "slug": "test-3"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 25,
+    "fields": {
+      "name": "Тест 4",
+      "description": "Тест 4",
+      "preview": "products/Product_3_SI5VTTP.png",
+      "category": "",
+      "price": 500000,
+      "date_of_creation": "2023-08-01T18:14:55.111Z",
+      "date_of_correction": null,
+      "views_count": 0,
+      "is_published": true,
+      "slug": "test-4"
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 14,
+    "fields": {
+      "name": "Электроника и гаджеты",
+      "description": "В нашей коллекции электроники и гаджетов вы найдете последние новинки технологий, которые сделают вашу жизнь более удобной и интересной. От инновационных смартфонов и ноутбуков до умных устройств для дома и впечатляющих гаджетов, мы предлагаем широкий выбор продуктов, которые помогут вам быть впереди всех."
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 15,
+    "fields": {
+      "name": "Аксессуары и устройства для мобильных устройств",
+      "description": "Откройте для себя нашу удивительную коллекцию аксессуаров и устройств для мобильных устройств, которые добавят стиль и функциональность к вашим гаджетам. Мы предлагаем чехлы, защитные пленки, зарядные устройства, беспроводные наушники и многое другое, чтобы удовлетворить все ваши потребности и предпочтения."
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 16,
+    "fields": {
+      "name": "Аудио и звуковые системы",
+      "description": "Погрузитесь в непревзойденное аудио-воздействие с нашей коллекцией аудио и звуковых систем. От мощных домашних кинотеатров и стерео систем до портативных Bluetooth-динамиков и наушников высокого качества, мы предлагаем устройства, которые превратят вашу музыкальную и звуковую экспериенцию в нечто удивительное."
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 17,
+    "fields": {
+      "name": "Красота и уход за кожей",
+      "description": "Позаботьтесь о своей красоте и здоровье с нашей коллекцией продуктов для ухода за кожей. У нас есть все, что вам нужно для осуществления полноценного режима ухода, включая органические косметические средства, натуральные масла, средства по уходу за волосами, устройства для массажа и многое другое. Позвольте себе расслабиться, ощутить блеск и раскрыть вашу внутреннюю красоту с нашими инновационными продуктами для ухода за кожей."
+    }
+  },
+  {
+    "model": "main.version",
+    "pk": 8,
+    "fields": {
+      "product": 2,
+      "version_number": 1,
+      "version_name": "Версия 1",
+      "is_active": false
+    }
+  },
+  {
+    "model": "main.version",
+    "pk": 9,
+    "fields": {
+      "product": 2,
+      "version_number": 2,
+      "version_name": "Версия 2",
+      "is_active": false
+    }
+  },
+  {
+    "model": "main.version",
+    "pk": 10,
+    "fields": {
+      "product": 2,
+      "version_number": 3,
+      "version_name": "Тест 3",
+      "is_active": true
+    }
+  },
+  {
+    "model": "main.version",
+    "pk": 11,
+    "fields": {
+      "product": 24,
+      "version_number": 1,
+      "version_name": "Версия 1",
+      "is_active": true
+    }
+  },
+  {
+    "model": "main.version",
+    "pk": 12,
+    "fields": {
+      "product": 24,
+      "version_number": 2,
+      "version_name": "Версия 2",
+      "is_active": false
+    }
+  },
+  {
+    "model": "blogpost.blogpost",
+    "pk": 3,
+    "fields": {
+      "title": "Тест 2",
+      "content": "Тест 2",
+      "preview": "blogpost/Product_3_GtHuebD.png",
+      "slug": null,
+      "date_of_creation": "2023-07-23T10:27:44.022Z",
+      "is_published": false,
+      "views_count": 1
+    }
+  },
+  {
+    "model": "blogpost.blogpost",
+    "pk": 6,
+    "fields": {
+      "title": "Тест 2",
+      "content": "Тест 2",
+      "preview": "blogpost/Product_3_BvFgXuJ.png",
+      "slug": null,
+      "date_of_creation": "2023-07-23T10:28:18.598Z",
+      "is_published": false,
+      "views_count": 17
+    }
+  },
+  {
+    "model": "blogpost.blogpost",
+    "pk": 9,
+    "fields": {
+      "title": "Тест 1",
+      "content": "Тест 1",
+      "preview": "blogpost/Product_2.png",
+      "slug": "test-1",
+      "date_of_creation": "2023-07-23T14:57:15.357Z",
+      "is_published": true,
+      "views_count": 7
+    }
+  },
+  {
+    "model": "blogpost.blogpost",
+    "pk": 10,
+    "fields": {
+      "title": "Тест 3",
+      "content": "Тест 3",
+      "preview": "blogpost/Product_5.png",
+      "slug": "test-3",
+      "date_of_creation": "2023-07-23T14:57:24.041Z",
+      "is_published": true,
+      "views_count": 42
+    }
+  },
+  {
+    "model": "blogpost.blogpost",
+    "pk": 11,
+    "fields": {
+      "title": "Тест 4",
+      "content": "Тест 4",
+      "preview": "blogpost/Product_1.png",
+      "slug": "test-4",
+      "date_of_creation": "2023-07-23T15:00:05.549Z",
+      "is_published": true,
+      "views_count": 7
+    }
+  }
+]

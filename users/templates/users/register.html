@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{% block content %}
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div class="col-md-8 mx-auto">
+            <h1 class="fw-light">{{ title }}</h1>
+        </div>
+    </div>
+</section>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <form method="post" enctype="multipart/form-data">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">Регистрация</div>
+                        <div class="card-body">
+
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit" class="btn btn-success">
+                                Регистрация
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
