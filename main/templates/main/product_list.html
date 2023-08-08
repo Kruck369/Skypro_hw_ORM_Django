@@ -35,10 +35,12 @@
                             <div class="col">
                                 <h6 class="card-subtitle mb-3 text-body-secondary">{{ object.price|intspace }} руб.</h6>
                                 <div class="btn-group">
+                                    {% if user == object.user %}
                                     <a href="{% url 'products:edit' object.pk %}" type="button"
                                        class="btn btn-sm btn-outline-primary">Редактировать</a>
                                     <a href="{% url 'products:delete' object.pk %}" type="button"
                                        class="btn btn-sm btn-outline-danger">Удалить</a>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

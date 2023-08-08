@@ -1,5 +1,6 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.forms import inlineformset_factory
-from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponseForbidden
 from django.urls import reverse_lazy, reverse
 from django.utils import timezone
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -18,8 +19,10 @@ class ProductListView(ListView):
         return context
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(LoginRequiredMixin, DetailView):
     model = Product
+    login_url = '/'
+    redirect_field_name = 'redirect_to'
 
     def get_object(self, queryset=None):
         self.object = super().get_object(queryset)
@@ -30,7 +33,7 @@ class ProductDetailView(DetailView):
 
 class ProductCreateView(CreateView):
     model = Product
-    fields = ('name', 'description', 'preview', 'price')
+    fields = ('name', 'description', 'preview', 'price', 'category')
     success_url = reverse_lazy('products:index')
 
     def form_valid(self, form):
@@ -39,6 +42,7 @@ class ProductCreateView(CreateView):
             new_mat = form.save()
             new_mat.slug = slugify(new_mat.name)
             new_mat.save()
+            new_mat.user = self.request.user
 
         return super().form_valid(form)
 
@@ -48,9 +52,19 @@ class ProductCreateView(CreateView):
         return context
 
 
-class ProductDeleteView(DeleteView):
+class ProductDeleteView(LoginRequiredMixin, DeleteView):
     model = Product
     success_url = reverse_lazy('products:index')
+    login_url = reverse_lazy('users:login')
+    redirect_field_name = 'redirect_to'
+
+    def dispatch(self, request, *args, **kwargs):
+        self.object = self.get_object()
+
+        if self.object.user != self.request.user:
+            return HttpResponseForbidden("Вы не можете удалить продукт другого пользователя.")
+
+        return super().dispatch(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -58,9 +72,19 @@ class ProductDeleteView(DeleteView):
         return context
 
 
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
     form_class = ProductForm
+    login_url = reverse_lazy('users:login')
+    redirect_field_name = 'redirect_to'
+
+    def dispatch(self, request, *args, **kwargs):
+        self.object = self.get_object()
+
+        if self.object.user != self.request.user:
+            return HttpResponseForbidden("Вы не можете удалить продукт другого пользователя.")
+
+        return super().dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
         if form.is_valid():
