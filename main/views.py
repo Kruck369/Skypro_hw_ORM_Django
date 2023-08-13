@@ -5,7 +5,9 @@ from django.urls import reverse_lazy, reverse
 from django.utils import timezone
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from pytils.translit import slugify
+from django.core.cache import cache
 
+from config import settings
 from main.forms import ProductForm, VersionForm
 from main.models import Product, Version
 
