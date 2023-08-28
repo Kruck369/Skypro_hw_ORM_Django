@@ -1,0 +1,76 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{% block content %}
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div class="col-md-9 mx-auto">
+            <h1 class="fw-light">{{ title }}</h1>
+            <p>Добро пожаловать в наш cервис рассылки.</p>
+            <p>Здесь вы можете создать рассылку.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h5>Количество рассылок: {{ total_mailings }}</h5>
+            <h5>Количество активных рассылок: {{ active_mailings }}</h5>
+            <h5>Количество уникальных клиентов: {{ unique_clients }}</h5>
+        </div>
+        <div class="col-9 ms-3">
+            <h4>Случайные статьи из блога:</h4>
+            {% for article in random_articles %}
+            <h5><a>{{ article.title }}</a></h5>
+            <p>{{ article.content }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="col-12 mb-5">
+            {% if user.is_moderator %}
+            <a class="btn btn-secondary" href="#">Добавить рассылку</a>
+            {% else %}
+            <a class="btn btn-primary" href="{% url 'mailing:create' %}">Добавить рассылку</a>
+            {% endif %}
+            <a class="btn btn-outline-secondary" href="{% url 'mailing:client_list' %}">Список клиентов</a>
+            <a class="btn btn-outline-secondary" href="{% url 'mailing:message_list' %}">Список сообщений</a>
+        </div>
+        <div class="row justify-content-center">
+            {% for object in object_list %}
+            {% if user.is_staff or user == object.author %}
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <h4><a href="{% url 'mailing:newsletter' object.pk %}" class="card-title">{{ object.message.subject }}</a>
+                        </h4>
+                        <div class="card-text">
+                            {% for client in object.client.all %}
+                            <p style="column-width: 30%; column-count: 2; column-fill: balance;">{{ client.email }}</p>
+                            {% endfor %}
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col">
+                                <h6 class="card-subtitle mb-3 text-body-secondary">{{ object.get_frequency_display }} (в {{ object.time }})</h6>
+                                <div class="btn-group">
+                                    {% if user == object.author  %}
+                                    <a href="{% url 'mailing:edit' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-primary">Редактировать</a>
+                                    <a href="{% url 'mailing:delete' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-danger">Удалить</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

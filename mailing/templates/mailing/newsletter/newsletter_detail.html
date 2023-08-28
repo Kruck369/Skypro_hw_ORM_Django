@@ -1,0 +1,74 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{% block content %}
+<div class="container mb-5" style="margin-top:3vh;">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <a href="{% url 'mailing:index' %}" class="btn btn-outline-secondary mb-4">К списку рассылок</a>
+            <h2 class="text-nowrap">{{ object.message.subject }}</h2>
+            {% if object.status == "CR" %}
+            <div class="badge bg-secondary fs-5 text-wrap mb-2">Создана</div>
+            {% elif object.status == "ST" %}
+            <div class="badge bg-warning fs-5 text-wrap mb-2">Запущена</div>
+            {% elif object.status == "CMP" %}
+            <div class="badge bg-success fs-5 text-wrap mb-2">Завершена</div>
+            {% endif %}
+        </div>
+                <div class="col-4 text-end">
+            <div class="badge bg-secondary fs-5 text-wrap" style="width: 20rem;">{{ object.get_frequency_display }}
+            </div>
+            <div class="btn-group mt-2">
+                <div class="btn-group">
+                    {% if user == object.author %}
+                    <a href="{% url 'mailing:edit' object.pk %}" type="button"
+                       class="btn btn-outline-primary">Редактировать</a>
+                    <a href="{% url 'products:delete' object.pk %}" type="button"
+                       class="btn btn-outline-danger">Удалить</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="w-100">
+            <div class="col-4">
+                <h4 class="text-body-secondary">{{ object.time }}</h4>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div id="newsletter-status">
+    <p>Status: {{ object.get_status_display }}</p>
+    {% if user.is_authenticated and object.status in allowed_statuses %}
+        <button id="start-newsletter" class="btn btn-primary">Сменить статус</button>
+        <script>
+            const toggleButton = document.getElementById("start-newsletter");
+            toggleButton.addEventListener("click", function(event) {
+                fetch("{% url 'mailing:start_newsletter' object.pk %}", {
+                    method: "POST",
+                    headers: {
+                        "X-CSRFToken": "{{ csrf_token }}",
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const newsletterStatus = document.getElementById("newsletter-status");
+                    newsletterStatus.innerHTML = "<p>Status: " + data.status + "</p>";
+                    toggleButton.textContent = (data.status === "ST") ? "Stop Newsletter" : "Start Newsletter";
+                    location.reload();
+                });
+            });
+        </script>
+    {% endif %}
+</div>
+</div>
+<div class="container">
+    <div class="header">
+        <h3 class="text"> Сообщение</h3>
+    </div>
+    <p class="fs-5"> {{ object.message.body }} </p>
+    <div class="footer">
+        <p class="fs-5 text-secondary"> Автор: {{ object.author.first_name }} {{ object.author.last_name }} ({{
+            object.author.email }})</p>
+    </div>
+</div>
+{% endblock %}

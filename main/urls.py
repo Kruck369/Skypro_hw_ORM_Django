@@ -8,7 +8,7 @@ app_name = MainConfig.name
 
 urlpatterns = [
     path('', ProductListView.as_view(), name='index'),
-    path('product/<int:pk>', cache_page(60)(ProductDetailView.as_view()), name='product'),
+    path('product/<int:pk>', cache_page(10)(ProductDetailView.as_view()), name='product'),
     path('create/', ProductCreateView.as_view(), name='create'),
     path('delete/<int:pk>', ProductDeleteView.as_view(), name='delete'),
     path('edit/<int:pk>', ProductUpdateView.as_view(), name='edit'),

@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{% block content %}
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div class="col-md-8 mx-auto">
+            <h1 class="fw-light">{{ title }}</h1>
+        </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="col-12 mb-5">
+            <a class="btn btn-primary" href="{% url 'mailing:message_create' %}">Добавить сообщение</a>
+            <a class="btn btn-outline-secondary" href="{% url 'mailing:index' %}">Список рассылок</a>
+            <a class="btn btn-outline-secondary" href="{% url 'mailing:client_list' %}">Список клиентов</a>
+        </div>
+        <div class="row justify-content-center">
+            {% for object in object_list %}
+            {% if user == object.author or user.is_staff or user.is_superuser %}
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <h4><a href="{% url 'mailing:message_detail' object.pk %}" class="card-title">{{ object.subject }}</a>
+                        </h4>
+                        <div class="card-text">
+                            <p style="column-width: 30%; column-count: 2; column-fill: balance;">{{ object.body|truncatechars:100 }}</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="col">
+                                <h6 class="card-subtitle mb-3 text-body-secondary">{{ object.author.first_name }} {{ object.author.last_name }} ({{ object.author.email }})</h6>
+                                <div class="btn-group">
+                                    {% if user == object.author or user.is_superuser %}
+                                    <a href="{% url 'mailing:message_edit' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-primary">Редактировать</a>
+                                    <a href="{% url 'mailing:message_delete' object.pk %}" type="button"
+                                       class="btn btn-sm btn-outline-danger">Удалить</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

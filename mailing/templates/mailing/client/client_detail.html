@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load media_tags %}
+{% load custom_filters %}
+{% block content %}
+<div class="container mb-5" style="margin-top:3vh;">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <a href="{% url 'mailing:client_list' %}" class="btn btn-outline-secondary mb-4">К списку клиентов</a>
+            <h2 class="text-nowrap">{{ object.last_name }} {{ object.first_name }} {{ object.middle_name }}</h2>
+        </div>
+        <div class="col-4 text-end">
+            <div class="badge bg-secondary fs-5 text-wrap" style="width: 20rem;">{{ object.email }}</div>
+            <div class="btn-group mt-2">
+                <div class="btn-group">
+                    {% if user == object.author %}
+                    <a href="{% url 'mailing:client_edit' object.pk %}" type="button"
+                       class="btn btn-outline-primary">Редактировать</a>
+                    <a href="{% url 'mailing:client_delete' object.pk %}" type="button"
+                       class="btn btn-outline-danger">Удалить</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="header">
+        <h3 class="text"> Комментарий</h3>
+    </div>
+    <p class="fs-5"> {{ object.comment }} </p>
+    <div class="footer">
+        <p class="fs-5 text-secondary"> Автор: {{ object.author.first_name }} {{ object.author.last_name }} ({{ object.author.email }})</p>
+    </div>
+</div>
+{% endblock %}
