@@ -3,6 +3,7 @@ from django.forms import inlineformset_factory
 from django.http import HttpResponseForbidden
 from django.urls import reverse_lazy, reverse
 from django.utils import timezone
+from django.views.decorators.cache import cache_page
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from pytils.translit import slugify
 from django.core.cache import cache
@@ -21,10 +22,8 @@ class ProductListView(ListView):
         return context
 
 
-class ProductDetailView(LoginRequiredMixin, DetailView):
+class ProductDetailView(DetailView):
     model = Product
-    login_url = '/'
-    redirect_field_name = 'redirect_to'
 
     def get_object(self, queryset=None):
         self.object = super().get_object(queryset)
